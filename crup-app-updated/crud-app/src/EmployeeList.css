@@ -1,0 +1,123 @@
+
+.employee-list {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+
+  }
+  
+  .employee-list h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .employee-list ul {
+    list-style-type: none;
+    padding: 0;
+ 
+  }
+  
+  .employee-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .employee-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .employee-list button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .employee-list button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .form-container input {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .employee-list {
+      padding: 10px;
+    }
+  
+    .employee-list li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .employee-list li button {
+      margin: 5px 0;
+    }
+  
+    .form-container input {
+      max-width: 100%;
+    }
+  
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .employee-list h1 {
+      font-size: 1.2em;
+    }
+  
+    .form-container input {
+      padding: 8px;
+    }
+  
+    .form-container button {
+      padding: 8px;
+    }
+  }
+  
